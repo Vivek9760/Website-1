@@ -1,0 +1,59 @@
+extends base.pug
+
+block scripts
+  script(src='../static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+block nav 
+     nav#navbar.top 
+            ul
+                div#logo
+                    |DA
+                    img(src="../static/dance/logo.svg", alt="")
+                li: a(href="/") Home 
+                li #[a(href="/") About] 
+                li: a(href="/") Services 
+                li: a(href="/")  details 
+                li: a(href="/contact")  Contact
+
+block content
+        section#intro 
+            div 
+                |Welcome to Dance Academy
+            div.small    
+                |Eat Sleep Dance - Repeat
+        section#mission
+            h3  Our Mission
+            div.cardcontainer 
+                div.card
+                    h4   Dance Perfection
+                    div.card-box
+                        div.card-img
+                            img(src="../static/dance/dance1.png")
+                        p   This is the best Dance Academy...
+                div.card
+                    h4   Dance Style
+                    div.card-box
+                        div.card-img
+                            img(src="../static/dance/dance2.jpg")
+                        p   This is the best Dance Academy...
+                div.card
+                    h4   Expert Teaching
+                    div.card-box
+                        div.card-img
+                            img(src="../static/dance/dance3.png")
+                        p This is the best Dance Academy...
+        section#sponsor 
+            div
+                h3  Our Sponsors
+            div
+                img(src="../static/sponsor/facebook.svg")
+                img(src="../static/sponsor/google.png")
+                img(src="../static/sponsor/instagram.png")
+                img(src="../static/sponsor/microsoft.png")
+    
+block foot 
+    section#footer 
+            |Copyright ⓒ 2019DanceAcademy.com All rights | reserved

@@ -1,0 +1,58 @@
+
+p{
+    font-size: 3.5rem;
+    text-align: center;
+    color: rgb(230, 230, 230);
+    z-index: 1;
+    margin-bottom: 35px;
+}
+.myform{
+    display:flex;
+    flex-direction :column;
+    align-items: center;
+    z-index: 1;
+}
+.myinput{
+    width:40%;
+    padding: 9px;
+    margin: 8px;
+    font-size: 16px;
+    border:2px solid darkred;
+    border-radius: 6px;
+    outline: none;
+    background-color: rgb(226, 166, 166);
+}
+.btn{
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 12px;
+    border: 2px solid darkred;
+    background-color: red;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    width: 20%;
+    outline: none;
+}
+
+.container{
+    background: url();
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 85vh;
+    justify-content: center;
+    background-color: black;
+}
+.container::before{
+    position: absolute;
+    content: "";
+    top: 64px;
+    left: -50px;
+    z-index: 1;
+    width: 100%;
+    height: 85%;
+    background: url(../static/dance/did2.jpg) no-repeat center/cover;
+    opacity: 0.6;
+}

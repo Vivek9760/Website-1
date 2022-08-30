@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+#navbar{
+    background-color: #d43b3b;
+    font-family: 'Dancing Script', cursive;
+    padding: 12px 4px;
+}
+#navbar ul{
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+#logo img{
+    height: 35px;
+}
+#navbar li{
+    list-style: none;  
+}
+#navbar li a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+#navbar li a:hover{
+    color: black;
+text-decoration: underline;}
+#intro{
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:url(../static/dance/did1.jpg) no-repeat center/cover;
+    height : 250px;
+}
+
+#intro .small{
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+#mission{     
+    height: 300px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+flex-direction: column;} 
+
+#mission h3{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 36px
+}
+.card{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 22%;
+    margin: 20px 10px;
+    height: 187px;
+}
+.card-box{
+    display: flex;
+}
+.card-box p{
+    margin-top: 50px;
+    padding-left: 15px;
+}
+.card-img{
+    margin-top: 39px;
+    margin-left: 12px;
+}
+.card-img img{
+    height: 57px;
+    width: 70px;
+    margin-right: 10px;
+}
+
+.card h4{
+    text-align: center;
+    margin: 12px;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.cardcontainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#sponsor::before{
+    position: absolute;
+    content: "";
+    top: 615px;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+    height: 245px;
+    background: url(../static/dance/did3.jpg) no-repeat center/cover;
+    opacity: 0.6;
+}
+#sponsor{ height:245px;
+    background-color: #000000;
+} 
+
+#sponsor h3{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 36px;
+    color: white;
+    z-index: 1;
+}
+#sponsor div{
+    display: flex;
+    justify-content: center;
+}
+#sponsor div img{
+    height: 60px;
+    z-index: 1;
+    margin: 55px 34px;
+}
+
+#footer{ 
+    height: 30px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

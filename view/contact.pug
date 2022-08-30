@@ -1,0 +1,35 @@
+extends base.pug
+
+block scripts
+  script(src='../static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+        include ../static/contactstyle.css
+block nav 
+     nav#navbar.top 
+            ul
+                div#logo
+                    |DA
+                    img(src="../static/dance/logo.svg", alt="")
+                li: a(href="/") Home 
+                li #[a(href="/") About] 
+                li: a(href="/") Services 
+                li: a(href="/")  details 
+                li: a(href="/contact")  Contact
+block content 
+    div.container
+        p   #{content}
+        form(action="/contact", method="post", class="myform")
+            input(type="text", name="name", class="myinput", placeholder="Enter Your Name")
+            input(type="text", name="age", class="myinput", placeholder="Enter Your Age")
+            input(type="email", name="email", class="myinput", placeholder="Enter Your E-mail")
+            input(type="text", name="number", class="myinput", placeholder="Enter Your Mobile No.")
+            input(type="text", name="address", class="myinput", placeholder="Enter Your Address")
+            button(class="btn") submit
+        
+
+block foot
+    section#footer 
+            |Copyright ⓒ 2019DanceAcademy.com All rights | reserved
